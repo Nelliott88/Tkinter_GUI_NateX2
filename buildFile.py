@@ -1,13 +1,11 @@
 # Here, we will make magic happen.
-import Tkinter
+from Tkinter import *
 
-root = Tkinter.Tk()
+root = Tk()
 
 #####
 # Create Model
 #####
-
-
 
 
 
@@ -26,3 +24,7 @@ root = Tkinter.Tk()
 #####
 # Create View
 #####
+drawpad = Canvas(root, background='brown')
+drawpad.grid(row=0, column=1)
+
+root.mainloop()
