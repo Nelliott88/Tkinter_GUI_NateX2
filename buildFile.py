@@ -1,7 +1,11 @@
 # Here, we will make magic happen.
-import Tkinter
+from Tkinter import *
+import PIL
+from PIL import ImageTK
 
-root = Tkinter.Tk()
+import os.path
+
+root = Tk()
 
 #####
 # Create Model
@@ -17,7 +21,9 @@ root = Tkinter.Tk()
 # Create Controller
 #####
 
-
+var = IntVar()
+ckButton = Checkbutton(root, text = "Overlay?", variable = var)
+ckButton.pack()
 
 
 
@@ -26,3 +32,5 @@ root = Tkinter.Tk()
 #####
 # Create View
 #####
+
+draw
