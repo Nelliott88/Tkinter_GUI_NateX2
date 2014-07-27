@@ -1,5 +1,9 @@
 # Here, we will make magic happen.
 from Tkinter import *
+import PIL
+from PIL import ImageTK
+
+import os.path
 
 root = Tk()
 
@@ -11,11 +15,15 @@ root = Tk()
 
 
 
+
+
 #####
 # Create Controller
 #####
 
-
+var = IntVar()
+ckButton = Checkbutton(root, text = "Overlay?", variable = var)
+ckButton.pack()
 
 
 
@@ -24,7 +32,5 @@ root = Tk()
 #####
 # Create View
 #####
-drawpad = Canvas(root, background='brown')
-drawpad.grid(row=0, column=1)
 
-root.mainloop()
+draw
